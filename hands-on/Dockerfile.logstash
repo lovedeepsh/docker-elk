@@ -1,0 +1,4 @@
+FROM logstash:latest
+
+COPY logstash.conf /config-dir/logstash.conf
+CMD logstash -f /config-dir/logstash.conf
